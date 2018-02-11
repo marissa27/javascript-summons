@@ -17,13 +17,7 @@ factors = function(num) {
     }
   }
 
-  if (factors.length) {
-    return factors
-  } else {
-    return null
-  }
-
-  // factors.length != 0 ? factors : null;
+  return factors || null;
 };
 
 /*--Mocha Testing--*/
