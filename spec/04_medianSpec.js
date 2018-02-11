@@ -10,6 +10,6 @@ describe("Median", function() {
     return expect(median([1, 3, 5, 6, 2, 9])).to.eql(4);
   });
   return it("returns the median for an array containing an odd number of integers", function() {
-    return expect(median([1, 3, 5, 2, 9])).to.eql(3);
+    return expect(median([1, 3, 5, 2, 10])).to.eql(3);
   });
 });
