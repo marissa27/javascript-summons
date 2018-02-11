@@ -10,7 +10,19 @@
 var indexWords;
 
 indexWords = function(arr) {
-  return "summon here";
+  var sortedArr = arr.sort();
+  var solveArr = sortedArr.reduce(function(acc, word) {
+  var key = word[0];
+
+  if(!acc[key]) {
+    acc[key] = [];
+  }
+
+  acc[key].push(word)
+
+  return acc
+ }, {});
+  return solveArr
 };
 
 /*--Mocha Testing--*/
